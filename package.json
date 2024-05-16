@@ -34,5 +34,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "this is a assignment project given by upskill mafia to me (mihir)",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "mihir",
+  "license": "ISC"
 }
