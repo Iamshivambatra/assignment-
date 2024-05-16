@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.title {
+    font-size: larger;
+    color:#992E9D;
+    font-weight: 500;
+}
+
+.subtitle { 
+    font-size: larger;
+    color:#686972;
+    font-size: medium;
+}

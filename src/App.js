@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import Stat from './components/Stat';
+import CoursesImg from './assets/img/courses.png'
+import DoubtsImg  from './assets/img/doubts.png'
+import LearnersImg from './assets/img/learners.png'
+import ProjectsImg from './assets/img/projects.png'
 
 
 function App() {
@@ -23,6 +28,7 @@ function App() {
     }, 1000);
     return () => clearTimeout(timer);
   });
+
   return (
     <div className="App">
       <div className='navigation'>
@@ -76,10 +82,10 @@ function App() {
         </div>
       </div>
       <div className='main-end'>
-        <div className='end'>24 courses</div>
-        <div className='end'>30k+ learners</div>
-        <div className='end'>100k+ doubts solved </div>
-        <div className=''>10k+ student projects</div>
+        <Stat title={'24'} subtitle={'Course'} icon={CoursesImg}/>
+        <Stat title={'30K+'} subtitle={'Learners'} icon={DoubtsImg}/>
+        <Stat title={'100K+'} subtitle={'Doubts Solved'} icon={LearnersImg}/>
+        <Stat title={'10K+'} subtitle={'Student Projects'} icon={ProjectsImg}/>
       </div>
       <div className="curiculum">
         <div className="curiculump-1">
