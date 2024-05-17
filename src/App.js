@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import Stat from './components/Stat';
+import CoursesImg from './assets/img/courses.png'
+import DoubtsImg from './assets/img/doubts.png'
+import LearnersImg from './assets/img/learners.png'
+import ProjectsImg from './assets/img/projects.png'
+import certificate from './assets/img/certificate.png'
+import teaching from './assets/img/teaching.jpeg'
 
 
 function App() {
@@ -42,7 +49,7 @@ function App() {
           </ul>
         </div>
       </div>
-      <div className='main'>
+      <div className='main' id='overview'>
         <span className='span'>
           <svg className='emoji w-2 h-2' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
             <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
@@ -76,10 +83,10 @@ function App() {
         </div>
       </div>
       <div className='main-end'>
-        <div className='end'>24 courses</div>
-        <div className='end'>30k+ learners</div>
-        <div className='end'>100k+ doubts solved </div>
-        <div className=''>10k+ student projects</div>
+        <Stat title={'24'} subtitle={'Course'} icon={CoursesImg} />
+        <Stat title={'30K+'} subtitle={'Learners'} icon={DoubtsImg} />
+        <Stat title={'100K+'} subtitle={'Doubts Solved'} icon={LearnersImg} />
+        <Stat title={'10K+'} subtitle={'Student Projects'} icon={ProjectsImg} />
       </div>
       <div className="curiculum">
         <div className="curiculump-1">
@@ -166,20 +173,40 @@ function App() {
       <div className='sec3foot-box'>
         <div className='sec3foot-body1'>
           <div className='sec3foot-body'><span>get 6 industry recognised Certificates</span></div>
-          <div>
-            <img src="/helo.img" alt="certificate" />
+          <div className='feature2box'>
+            <img className='certificate' src={certificate} alt="certificate" />
+            <div><span className='feature1'><svg className='star' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+            </svg>
+              Official & Verified</span></div>
+            <div><span className='feature2'><svg className='star' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+            </svg>
+              Enhance Credibility</span></div>
+
           </div>
         </div>
         <div className='sec3foot-body2'>
           <div className='sec3foot-body'><div><span>bag Internship Opportunities</span></div><span className='span3'>with every course, we make you not only  industry-ready but also help you crack your first first Internship</span></div>
+          <div className='feature2box'>
+            <img className='teaching' src={teaching} alt="teaching" />
+            <div><span className='feature1'><svg className='star' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+            </svg>
+              Official & Verified</span></div>
+            <div><span className='feature2'><svg className='star' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+            </svg>
+              Enhance Credibility</span></div>
+
+          </div>
         </div>
       </div>
       <div className='end'>
         <div className='end1'>
-          <div className='end11'><span className='end11p'>enroll for DATASCIENCE </span><div> bundle @1499 <span className='value'>₹2600</span>
-          </div>
+          <div className='end11'><span className='end11p'>enroll for DATASCIENCE bundle @1499 </span><span className='value'>₹2600</span>
             <span className='value1'>become an expert  in the  Data Science feild by enrolling into 6  extensive courses!</span>
-            <div> <button className='button1'>
+            <div> <button className='button2'>
               Enroll Now</button></div>
           </div>
           <div className='end12'>
@@ -194,7 +221,7 @@ function App() {
         <div className='end2'>
           <div className='end11'><span className='end11p'>enroll for DATASCIENCE bundle @1499 </span><span className='value'>₹2600</span>
             <span className='value1'>become an expert  in the  Data Science feild by enrolling into 6  extensive courses!</span>
-            <div> <button className='button1'>
+            <div> <button className='button2'>
               Enroll Now</button></div>
           </div>
           <div className='end12'>
