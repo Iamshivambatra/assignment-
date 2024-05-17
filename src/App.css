@@ -102,6 +102,33 @@ h1 {
   color: #c48200;
 }
 
+.feature1 {
+  background-color: #F4D6F8;
+  border: 1px solid #fde5b4;
+  padding: 7px;
+  display: flex;
+  justify-content: left;
+  width: fit-content;
+  margin: 0px 15px 0px 1px;
+  border-radius: 50px;
+  color: #992E9D;
+}
+
+.feature2 {
+  background-color: #F4D6F8;
+  border: 1px solid #fde5b4;
+  padding: 7px;
+  display: flex;
+  justify-content: right;
+  width: fit-content;
+  margin: -41.5px 14px 0px 50%;
+  border-radius: 50px;
+  color: #992E9D;
+
+}
+
+
+
 .star {
   height: 20px;
   color: #ee9f00;
@@ -374,10 +401,25 @@ h6 {
   align-items: center;
   justify-content: center;
   display: flex;
-  z-index: 5;
 }
 
-.step3 {}
+.sec3foot-box {
+  border-radius: 25px;
+}
+
+.certificate {
+  width: 60%;
+  height: auto;
+  margin-top: 2%;
+}
+
+.teaching {
+  width: 60%;
+  height: auto;
+  border-radius: 25px;
+  margin-top: 2%;
+
+}
 
 .secend-box {
   padding: 20px;
@@ -392,7 +434,8 @@ h6 {
 .border-1 {
   border-bottom: 7px solid #F5F5F6;
   margin-top: 20px;
-  width: 57%;
+  width: 48%;
+  margin-left: 2.5%;
   position: absolute;
   height: 2px;
 }
@@ -458,6 +501,8 @@ h6 {
   background-color: #F9EBFC;
   font-weight: bold;
   text-transform: capitalize;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .sec3foot-body2 {
@@ -465,6 +510,8 @@ h6 {
   background-color: #FFF4C5;
   color: #481900;
   font-weight: bold;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   text-transform: capitalize;
   width: 45%;
   padding: 20px;
